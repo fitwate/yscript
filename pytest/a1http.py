@@ -3,6 +3,7 @@
 
 #import urllib
 import time
+import datetime
 class Test():
     times=10
     #data='vt=4'
@@ -18,6 +19,8 @@ class Test():
             print(response.status, response.reason)
             resdata = response.read()
             print(resdata.decode('utf-8'))
+            print(i)
+            print(datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S')+'\n')
             time.sleep(1)
         conn.close()
 if __name__ == "__main__":
