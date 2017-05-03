@@ -4,6 +4,9 @@
 import paramiko
 import datetime
 import sys
+import os
+
+#username keyfile
 
 def ssh2(ip,username,key,cmd):
     try:
@@ -60,7 +63,7 @@ def ssh2(ip,username,key,cmd):
 
 
 if __name__=='__main__':
-    cmd = ['sudo date']#你要执行的命令列表
+    cmd = ['hostname']#你要执行的命令列表
     #ip = '1.1.1.1'
     username='test'
 
@@ -70,7 +73,12 @@ if __name__=='__main__':
     file.write('start: '+datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S')+'\n')
     file.close()
     
-    key = paramiko.RSAKey.from_private_key_file("id_rsa")
+    keyfile="id_rsa"
+    if os.path.exists(keyfile):
+        key = paramiko.RSAKey.from_private_key_file(keyfile)
+    else:
+        print(keyfile + " not exits!")
+        exit()
 
     with open('8ipfile') as f:
         ip_list = f.readlines()
