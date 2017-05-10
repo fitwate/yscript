@@ -6,7 +6,7 @@ import pymysql
 
 def mysql():
     try:
-        conn = pymysql.connect(host='127.0.0.1',port=3306,user='test_user',passwd='test_pass',db='mysql')
+        conn = pymysql.connect(host='127.0.0.1',port=3306,user='test_user',passwd='test_pass',db='test')
         cur = conn.cursor()
         cur.execute("SELECT host,user from user")
         ##for row in cur.fetchall():
