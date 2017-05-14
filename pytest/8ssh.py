@@ -35,7 +35,7 @@ if __name__=='__main__':
     #cmd = ['cal','echo hello!']#你要执行的命令列表
     cmd = ['echo hello!']#你要执行的命令列表
     threads = []
-    ip = '10.210.128.187'
+    ip = '127.0.0.1'
     print('Begin......')
     file = open('8ssh_res.txt', 'w')
     file.write('start: '+datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S')+'\n')

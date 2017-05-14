@@ -1,16 +1,19 @@
 #!/usr/bin/python3
 # -*- coding: utf-8 -*-
 
-import os
+def local_cmd():
+    import os
 
-#
-print('#')
-os.system('who')
-out=os.system('who')
-print(out)
+    #
+    print('#')
+    os.system('who')
+    out=os.system('who')
+    print(out)
+    
+    #
+    print('#')
+    output=os.popen('who')
+    print(output.read())
 
-#
-print('#')
-output=os.popen('who')
-print(output.read())
-
+if __name__ == '__main__':
+   local_cmd()
