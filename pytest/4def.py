@@ -6,9 +6,6 @@ def ysceshi (test1, test2=2):
     print(str(test1), '+', str(test2), '=', int(test1)+int(test2))
     return int(test1)+int(test2)
 
-print(ysceshi(1,1))
-ysceshi(1, 1)
-
 #
 def account_login():
     password = input("password:")
@@ -21,8 +18,6 @@ def account_login():
     else:
         print("Wrong password or invalid input!")
         account_login()
-
-account_login()
 
 #
 def is_even(x):
@@ -39,5 +34,8 @@ def is_odd(x):
     return not is_even(x)
 
 if __name__ == '__main__':
+    print(ysceshi(1,1))
+    ysceshi(1, 1)
+    account_login()
     print(is_odd(1))
     print(is_even(1))
