@@ -1,13 +1,6 @@
 start: 2017-03-17 16:54:30
 test5	Error
-zonghao1	OK
-chunying	OK
-yichi1	OK
-yongrui	OK
 test4	OK
 test3	OK
-yushuai	OK
-test1	OK
-guangzu	OK
 test2	OK
 test6	Error
