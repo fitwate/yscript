@@ -12,13 +12,14 @@ class Test():
     def testSend(self):
         import http.client
         headers = {"Content-type": "application/x-www-form-urlencoded","Accept": "text/plain","Connection":"Keep-Alive"}
-        conn = http.client.HTTPConnection("127.0.0.1",80)
+        conn = http.client.HTTPConnection("www.baidu.com",80)
         for i in range(self.times):
-            conn.request("POST", "/test", self.data, headers)
+            conn.request("GET", "/index.html", self.data, headers)
             response = conn.getresponse()
             print(response.status, response.reason)
             resdata = response.read()
             print(resdata.decode('utf-8'))
+            #print(resdata)
             print(i)
             print(datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S')+'\n')
             time.sleep(1)
