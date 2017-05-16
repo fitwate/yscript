@@ -2,6 +2,7 @@
 # -*- coding: utf-8 -*-
 
 def list_l():
+    print('def list_l start ...')
     testlist=[1,2,3,3]
     print(len(testlist))
     print(min(testlist))
@@ -41,6 +42,20 @@ def list_l():
     testlistb.sort()
     print(testlistb)
 
+def dict_l():
+    print('\ndef dict_l start ...')
+    dict_a={'1':'a','2':'b','3':'c'}
+    
+    for v in dict_a.values():
+        print(v)
+
+    for k in dict_a.keys():
+        print(k)
+
+    for k,v in dict_a.items():
+        print(k,v)
+
 if __name__ == '__main__':
     list_l()
+    dict_l()
     
