@@ -42,6 +42,10 @@ def list_l():
     testlistb.sort()
     print(testlistb)
 
+    print([x+1 for x in [1,2,3,4,5,6,7,8,9,10] if x%2==0])
+    print([(x,y) for x in [1,2,3,4] for y in ['a','b','c','d']])
+
+
 def dict_l():
     print('\ndef dict_l start ...')
     dict_a={'1':'a','2':'b','3':'c'}
