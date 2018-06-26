@@ -56,10 +56,12 @@ def dict_l():
     for k in dict_a.keys():
         print(k)
 
+#
+    print(dict_a.items())
     for k,v in dict_a.items():
         print(k,v)
 
 if __name__ == '__main__':
     list_l()
     dict_l()
-    
+# 
