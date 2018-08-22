@@ -6,7 +6,7 @@ def base():
     string='1'
     print(type(string))
     print(num)
-    # 111?#
+    # 111#
     
     words = 'words'*3
     print(words)
