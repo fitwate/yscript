@@ -1,0 +1,15 @@
+[testdb]
+host=127.0.0.1
+port=3389
+user=test
+password=test
+db=testdb
+
+[abclist]
+a=a
+b=b
+c=c
+d=d
+e=e
+f=f
+g=g
