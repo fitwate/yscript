@@ -1,0 +1,6 @@
+mysql> create database ysceshi character set utf8;
+mysql> GRANT ALL ON ysceshi.* TO ysu@"localhost" IDENTIFIED BY 'ysp'; 
+mysql> GRANT ALL ON ysceshi.* TO ysu@"127.0.0.1" IDENTIFIED BY 'ysp';
+
+
+mysql -uroot -p ysceshi < ysceshi.sql

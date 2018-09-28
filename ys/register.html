@@ -1,0 +1,109 @@
+<html>
+	<head>
+	<title> 注册页面 </title>
+	<meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+	</head>
+	<body>
+		<table border="1" width="500" align="center">
+		<form name="frm" action="register.php"  method="get" title="这是表单2">
+			<caption>注册页面</caption>
+			
+					<input type="hidden" name="序号" size="30" maxlength="10" value="编号">
+			
+			<tr>
+				<th>注册用户名</th>
+				<td>
+					<input type="text" name="username" size="30" maxlength="10" value="张三">
+				</td>
+			</tr>
+			<tr>
+				<th>注册密码</th>
+				<td>
+					<input type="password" name="password" size="20" value="123">
+				</td>
+			</tr>
+			<tr>
+				<th>复选框</th>
+				<td>
+					<input type="checkbox" name="playgame" >看游戏
+					<input type="checkbox">看电影
+					<input type="checkbox">旅游
+					<input type="checkbox">看书
+					<input type="checkbox">写字
+				</td>
+			</tr>
+			<tr>
+				<th>单选框</th>
+				<td>
+					<input type="radio" name="sex"> 男
+					<input type="radio" name="sex"> 女
+					<input type="radio" name="sex" checked> 保密
+				</td>
+			</tr>
+			<tr>
+				<th>上传文件</th>
+				<td>
+					<input type="file" name="image">
+				</td>
+			</tr>
+			<tr>
+				<th>下拉列表</th>
+				<td>
+					<select name="gn">
+						<option value="0">--请选择--</option>
+						<option value="1">1111</option>
+						<option value="2">2222</option>
+						<option>2223</option>
+						<option selected >2224</option>
+						<option>2225</option>
+						<option>2226</option>
+					</select>
+				</td>
+			</tr>
+			<tr>
+				<th>列表</th>
+				<td>
+					<select name="gn" size="5">
+						<option value="0">--请选择--</option>
+						<option value="1">1111</option>
+						<option value="2">2222</option>
+						<option>2223</option>
+						<option selected>2224</option>
+						<option>2225</option>
+						<option>2226</option>
+					</select>
+				</td>
+			</tr>
+			<tr>
+				<th>多选下拉列表</th>
+				<td>
+					<select name="gn" size="5"  multiple>
+						<option value="0">--请选择--</option>
+						<option selected value="1">1111</option>
+						<option value="2">2222</option>
+						<option>2223</option>
+						<option selected>2224</option>
+						<option>2225</option>
+						<option>2226</option>
+					</select>
+				</td>
+			</tr>
+			
+			<tr>
+				<th>多行文本</th>
+				<td>
+					<textarea cols="40" rows="6" name="message" maxlength="10"> 在这里输入你的信息 </textarea>
+				</td>
+			</tr>
+			<tr>
+				<td colspan="2" align="center">
+					<input type="submit" name="sub" value="提交">
+					<input type="reset">
+				</td>
+			</tr>
+		</form>
+		</table>
+	</body>
+
+
+</html>

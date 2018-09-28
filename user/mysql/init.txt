@@ -1,0 +1,6 @@
+mysql> create database user character set utf8;
+mysql> GRANT ALL ON user.* TO ysu@"localhost" IDENTIFIED BY 'ysp'; 
+mysql> GRANT ALL ON user.* TO ysu@"127.0.0.1" IDENTIFIED BY 'ysp';
+
+
+mysql -uroot -p user < user.sql

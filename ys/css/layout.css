@@ -1,0 +1,111 @@
+/* 这里直接写入CSS即可 */
+
+a {
+	color:green;
+	backgroud-color;red;
+	border:2px solid 
+
+	}
+body{
+	margin:0px;
+	padding:0px;
+	font:12px Arial,宋体;
+	text-align:center;
+	}
+#container {
+	margin-left:auto;
+	margin-right:auto;
+	width:960px;
+	text-align:left;
+	}
+#header { 
+	float:left;
+	width:100%;
+	 }
+#header #logo {
+	width:200px;
+	height:80px;
+	background:#ff00ff;
+	margin-right:10px;
+	float:left;
+	}
+#header #banner {
+	width:600px;
+	height:80px;
+	background:blue;
+	float:left;
+	}
+#header #tool {
+	width:140px;
+	height:80px;
+	background:#aa99ff;
+	float:right;
+	}
+#header #menu {
+	width:100%;
+	background:#eee;
+	float:left;
+	}
+#main{
+		
+	float:left;
+	width:100%;
+	}
+#main .leftbox {
+	width:750px;
+	float:left;
+	}
+.leftbox .left {
+	float:left;
+	width:300px;
+	height:200px;
+	background:yellow;
+	}
+.leftbox .right {
+	float:right;
+	width:440px;
+	height:200px;
+	background:yellow;
+	}	
+#main .rightbox {
+	width:200px;
+	float:right;
+	height:400px;
+	background:red;
+	}
+
+#footer{
+	float:left;
+	width:100%;
+	height:80px;
+	background:blue;
+	}
+ul {
+	background:yellow;
+	margin:0px;
+	padding:0px;
+	list-style:none;
+	}
+li {
+	height:28px;
+	line-height:28px;
+	float:left;
+	width:80px;
+	text-align:center;
+	}
+#menu a {color:red;
+	}
+#header #menu .tiao {
+	width:1px;
+	height:12px;
+	margin-top:5px;
+	overflow:hidden;
+	background:#000;	
+	}
+.nav {
+	float:left;
+	width:100%;
+	height:10px;
+	clear:both;
+	overflow:hidden;
+}
