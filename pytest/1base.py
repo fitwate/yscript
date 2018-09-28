@@ -6,6 +6,13 @@ def base():
     string='1'
     print(type(string))
     print(num)
+
+    if  isinstance ( num,int):
+        print(str(num) + ' is int typ')
+    else:
+        print(str(num) + ' is not  int typ')
+
+
     # 111#
     
     words = 'words'*3
