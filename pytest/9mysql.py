@@ -3,6 +3,7 @@
 
 #sudo pip3 install PyMySQL
 import pymysql
+import pickle
 
 def mysql():
     try:
@@ -13,6 +14,9 @@ def mysql():
         ##    print(row)
         ####print(cur.fetchone())
         data=cur.fetchall()
+        set_data=set(data)
+        print(type(set_data))
+        print(set_data)
         print(type(data))
         print()
         print(data)
@@ -23,6 +27,9 @@ def mysql():
         print()
         cur.close()
         conn.close()
+
+        with open('/var/tmp/mysql_data', 'wb') as f:
+            pickle.dump(data, f)
 
     except:
         print('mysql error')
