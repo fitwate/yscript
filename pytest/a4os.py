@@ -23,5 +23,9 @@ def local_cmd():
     output=os.popen('who')
     print(output.read())
 
+    #
+    print('os.path.join')
+    print(os.path.join('/root','111'))
+
 if __name__ == '__main__':
    local_cmd()
