@@ -12,7 +12,7 @@ def hello_world():
 
 @app.route('/')
 
-def index():
+def test():
     return render_template('b6_flask.html',testname='testuser')
 
 
