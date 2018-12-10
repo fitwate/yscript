@@ -2,6 +2,7 @@ package main
 
 import (
     "fmt"
+    "reflect"
 )
 
 type Test struct {
@@ -36,4 +37,5 @@ func main() {
                 },
     }
     fmt.Printf("%+v\n", e)
+    fmt.Println(reflect.TypeOf(e))
 }
