@@ -5,7 +5,6 @@ import (
 )
 
 func main() {
-
 //数组
     fmt.Println("数组")
     var test [2]string
