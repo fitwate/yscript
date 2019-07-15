@@ -21,6 +21,14 @@ func switch_test(test_key int)string {
 	return res
 }
 
+func for_test()int{
+	sum := 0
+	for i :=1; i <= 100; i++ {
+		sum += i
+	}
+	return sum
+}
+
 func main(){
 	const filename = "4if_for.go"
 	contents, err := ioutil.ReadFile(filename)
@@ -32,4 +40,5 @@ func main(){
 
 	switch_res := switch_test(91)
 	fmt.Println(switch_res)
+	fmt.Println(for_test())
 }
