@@ -109,4 +109,15 @@ func main() {
         fmt.Println("value is ", v)
 
     }
+
+//指针
+    var a int = 10
+    var b *int
+    b = &a
+    fmt.Println("\n指针练习")
+    fmt.Printf("指针值 %x \n",&a)
+    fmt.Println(*b)
+    *b = 20
+    fmt.Println(a)
+    fmt.Println(*b)
 }
