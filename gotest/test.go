@@ -4,15 +4,14 @@ import(
 	"fmt"
 )
 
-func main() {
-	var a int
-	var b *int
-	a = 10
-	b = &a
-	fmt.Println(a)
-	fmt.Println(b)
-	fmt.Println(*b)
+func for_test()int{
+	sum := 0
+	for i :=1;i<=100;i++{
+		sum += i
+	}
+	return sum
+}
 
-	*b = 20
-	fmt.Println(a)
+func main(){
+	fmt.Println(for_test())
 }

@@ -36,6 +36,14 @@ func test5(num1 int, num2 int)(min int, max int){
 	return
 }
 
+func test6(ptr *int){
+	*ptr = 20
+}
+
+func test61(ptr int){
+	ptr = 30
+}
+
 func main(){
 	test1()
 	test2(1,2)
@@ -44,4 +52,12 @@ func main(){
 	fmt.Println(a,str)
     min_key, max_key := test5(10, 200)
     fmt.Println(min_key, max_key)
+
+    //引用传递
+    fmt.Println("\n引用传递")
+    b := 10
+    test6(&b)
+    fmt.Println(b)
+    test61(b)
+    fmt.Println(b)
 }
