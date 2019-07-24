@@ -61,6 +61,13 @@ def dict_l():
     for k,v in dict_a.items():
         print(k,v)
 
+# 字典 key 不存在时，直接用key调用会造成脚本异常，可以使用get方法
+    print("\n") 
+    print('字典 key 不存在时，直接用key调用会造成脚本异常，可以使用get方法') 
+    print(dict_a.get('11')) 
+    print(dict_a.get('11','default_key')) 
+    print(dict_a['11']) 
+
 if __name__ == '__main__':
     list_l()
     dict_l()

@@ -27,5 +27,5 @@ if __name__ == '__main__':
 
     p2 = multiprocessing.Process(target=tests.action, args=('p2_output',30,))
     p2.start()
-    p2.join()
+    p2.join(timeout=60)
     print('p2_main')
