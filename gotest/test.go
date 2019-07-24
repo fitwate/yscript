@@ -1,17 +1,18 @@
 package main
 
-import(
+import (
 	"fmt"
 )
 
-func for_test()int{
+func for_test() int {
 	sum := 0
-	for i :=1;i<=100;i++{
+	for i := 1; i <= 100; i++ {
 		sum += i
 	}
+
 	return sum
 }
 
-func main(){
+func main() {
 	fmt.Println(for_test())
 }
