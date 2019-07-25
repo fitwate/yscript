@@ -1,13 +1,13 @@
 package main
 
-import(
-	"io/ioutil"
+import (
 	"fmt"
+	"io/ioutil"
 )
 
-func switch_test(test_key int)string {
+func switch_test(test_key int) string {
 	res := ""
-	switch{
+	switch {
 	case test_key < 0 || test_key > 100:
 		res = "input error"
 	case test_key < 60:
@@ -21,20 +21,20 @@ func switch_test(test_key int)string {
 	return res
 }
 
-func for_test()int{
+func for_test() int {
 	sum := 0
-	for i :=1; i <= 100; i++ {
+	for i := 1; i <= 100; i++ {
 		sum += i
 	}
 	return sum
 }
 
-func main(){
+func main() {
 	const filename = "4if_for.go"
 	contents, err := ioutil.ReadFile(filename)
 	if err != nil {
 		fmt.Println(err)
-	}else{
+	} else {
 		fmt.Printf("%s\n", contents)
 	}
 
