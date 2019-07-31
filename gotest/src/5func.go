@@ -44,7 +44,7 @@ func test61(ptr int) {
 	ptr = 30
 }
 
-func main() {
+func func_test() {
 	test1()
 	test2(1, 2)
 	test3(11, 22, 33, 44, 55)

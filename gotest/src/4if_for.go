@@ -29,7 +29,7 @@ func for_test() int {
 	return sum
 }
 
-func main() {
+func if_for() {
 	const filename = "4if_for.go"
 	contents, err := ioutil.ReadFile(filename)
 	if err != nil {
