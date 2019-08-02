@@ -8,7 +8,7 @@ func test(x int) {
 	fmt.Println(100 / x)
 }
 
-func defer_test() {
+func main() {
 	defer fmt.Println("11111111111111")
 	defer fmt.Println("2222222222222222")
 	//defer test(5)

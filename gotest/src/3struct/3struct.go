@@ -18,7 +18,7 @@ type Test2 struct {
 	Test_d Test
 }
 
-func struct_test() {
+func main() {
 	m := Test{
 		Name: "test_name",
 		Data: 10,

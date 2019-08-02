@@ -9,7 +9,7 @@ func goroute_func(a int) {
 	fmt.Println(a)
 }
 
-func goroute_test() {
+func main() {
 	for i := 1; i <= 100; i++ {
 		go goroute_func(i)
 	}

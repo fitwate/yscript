@@ -5,7 +5,7 @@ import (
 	"reflect"
 )
 
-func base() {
+func main() {
 	//int
 	var v1 int64
 	v1 = 122

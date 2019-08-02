@@ -44,7 +44,15 @@ func test61(ptr int) {
 	ptr = 30
 }
 
-func func_test() {
+func test7(a int, b int) (int, int) {
+	sum := a + b
+	avg := (a + b) / 2
+
+	return sum, avg
+
+}
+
+func main() {
 	test1()
 	test2(1, 2)
 	test3(11, 22, 33, 44, 55)
@@ -60,4 +68,11 @@ func func_test() {
 	fmt.Println(b)
 	test61(b)
 	fmt.Println(b)
+
+	sum, avg := test7(1, 2)
+	fmt.Println("多参数返回")
+	fmt.Println("sum= ", sum, "avg= ", avg)
+	sum1, _ := test7(1, 2)
+	fmt.Println("多参数返回，只取值一个参数")
+	fmt.Println("sm1= ", sum1)
 }
