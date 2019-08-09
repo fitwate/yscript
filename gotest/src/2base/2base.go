@@ -3,7 +3,12 @@ package main
 import (
 	"fmt"
 	"reflect"
+	"time"
 )
+
+func init() {
+	fmt.Println("init 函数 不用调用")
+}
 
 func main() {
 	//int
@@ -121,4 +126,21 @@ func main() {
 	*b = 20
 	fmt.Println(a)
 	fmt.Println(*b)
+
+	//常量
+	const (
+		man    = 1
+		forman = 2
+	)
+	for i := 0; i < 3; i++ {
+		nowtimes := time.Now().Unix()
+		fmt.Println(nowtimes)
+		if nowtimes%forman == 0 {
+			fmt.Println("forman")
+		} else {
+			fmt.Println("man")
+
+		}
+		time.Sleep(1000 * time.Millisecond)
+	}
 }
