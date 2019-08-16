@@ -143,4 +143,28 @@ func main() {
 		}
 		time.Sleep(1000 * time.Millisecond)
 	}
+
+	//`` 保持原样输出
+	tmp_str := `
+	保持原样输出
+	无变化
+	无变化
+	`
+	fmt.Println(tmp_str)
+
+	//数字转换成字符串
+	fmt.Println("数字转换成字符串")
+	var aa int
+	aa = 100
+	fmt.Printf("%q\n", aa)
+	str1 := fmt.Sprintf("%d", aa)
+	fmt.Printf("%q\n", str1)
+
+	//字符串转换数组
+	fmt.Println("字符串转换数组")
+	var str_s string
+	str_s = "abcdefg"
+	shuzu := []byte(str_s)
+	fmt.Println(shuzu)
+	fmt.Println(string(shuzu))
 }

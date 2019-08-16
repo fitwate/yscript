@@ -2,6 +2,7 @@ package main
 
 import (
 	"fmt"
+	"math"
 	"math/rand"
 	"time"
 )
@@ -24,5 +25,10 @@ func main() {
 		a := rand.Float32()
 		fmt.Println(a)
 	}
+
+	//类型最大值输出
+	fmt.Println("\n int16类型最大值输出")
+	fmt.Println(math.MinInt16)
+	fmt.Println(math.MaxInt16)
 
 }

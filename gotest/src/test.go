@@ -2,26 +2,15 @@ package main
 
 import (
 	"fmt"
-	"math/rand"
-	"time"
+	"strconv"
 )
 
-func init() {
-	rand.Seed(time.Now().Unix())
-}
-
 func main() {
-	for i := 1; i <= 5; i++ {
-		a := rand.Int()
-		fmt.Println(a)
-	}
-	for i := 1; i <= 5; i++ {
-		a := rand.Intn(100)
-		fmt.Println(a)
-	}
-	for i := 1; i <= 5; i++ {
-		a := rand.Float32()
-		fmt.Println(a)
-	}
+	testInt := 2
+	testStr := "22"
 
+	//fmt.Println(testInt + testStr)
+	fmt.Println(strconv.Itoa(testInt) + testStr)
+	res, _ := strconv.Atoi(testStr)
+	fmt.Println(testInt + res)
 }
