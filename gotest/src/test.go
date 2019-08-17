@@ -15,4 +15,5 @@ func main() {
 	for k, v := range testStr {
 		fmt.Printf("%d, %c, %d \n", k, v, len([]byte(string(v))))
 	}
+
 }
