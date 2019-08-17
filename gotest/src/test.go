@@ -2,15 +2,17 @@ package main
 
 import (
 	"fmt"
-	"strconv"
 )
 
 func main() {
-	testInt := 2
-	testStr := "22"
-
-	//fmt.Println(testInt + testStr)
-	fmt.Println(strconv.Itoa(testInt) + testStr)
-	res, _ := strconv.Atoi(testStr)
-	fmt.Println(testInt + res)
+	for i := 1; i <= 15; i++ {
+		for j := 1; j <= i; j++ {
+			fmt.Printf("A")
+		}
+		fmt.Println()
+	}
+	testStr := "abcadfafdadf"
+	for k, v := range testStr {
+		fmt.Printf("%d, %c, %d \n", k, v, len([]byte(string(v))))
+	}
 }
