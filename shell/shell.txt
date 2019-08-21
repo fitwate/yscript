@@ -7,3 +7,6 @@ sed ':t;N;s/\n//;b t'
 3.删除最后一列
 cat sum  |awk '{$NF="";print}'
 cat /etc/passwd | awk  -F : 'OFS=":" {$NF="";print}' | sed s/:$//g
+
+4. 当前时间
+nowtime=`date "+%Y%m%d_%H%M%S"`

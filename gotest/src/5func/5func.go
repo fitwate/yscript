@@ -52,6 +52,15 @@ func test7(a int, b int) (int, int) {
 
 }
 
+func add(a int, arg ...int) int {
+	sum := a
+	for i := 0; i < len(arg); i++ {
+		sum += arg[i]
+	}
+
+	return sum
+}
+
 func main() {
 	test1()
 	test2(1, 2)
@@ -75,4 +84,9 @@ func main() {
 	sum1, _ := test7(1, 2)
 	fmt.Println("多参数返回，只取值一个参数")
 	fmt.Println("sm1= ", sum1)
+
+	fmt.Println("\n不定参数传入")
+	fmt.Println(add(1))
+	fmt.Println(add(1, 2))
+	fmt.Println(add(1, 2, 3))
 }
